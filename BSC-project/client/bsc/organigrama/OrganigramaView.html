@@ -1,0 +1,18 @@
+<template name="OrganigramaView">
+    <article class="generic-template">
+
+        <h3>{{name}}</h3>
+        <p>
+            <strong>Descripción: </strong>
+            {{desc}}
+        </p>
+        <h2>Nivel Táctico</h2>
+        <p>{{#each taticalLevel}}
+                <span class="generic-template-sublevel">
+                    {{name}}
+                </span>
+            {{/each}}
+
+        </p>
+    </article>
+</template>

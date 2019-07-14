@@ -1,0 +1,16 @@
+<template name="Organigrama">
+    <h1 class="page-title">Organigrama Funcional</h1>
+    {{> NewAutoOrganigrama}}
+
+
+    <section class="generic-template">
+        {{#if Template.subscriptionsReady}}
+            {{#each organigrama}}
+                {{> OrganigramaView}}
+            {{/each}}
+        {{else}}
+             <p>Loading</p>
+         {{/if}}
+    </section>
+
+</template>
