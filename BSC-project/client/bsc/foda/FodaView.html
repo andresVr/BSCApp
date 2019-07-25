@@ -1,0 +1,61 @@
+<template name="FodaView">
+    <h1 class="page-title">Análisis FODA</h1>
+    <div class="col-md-12">
+        <div class="col-md-3">
+            {{> AutoFortalezasView}}
+        </div>
+        <div class="col-md-3">
+            {{> AutoDebilidadesView}}
+        </div>
+
+        <div class="col-md-3">
+            {{> AutoOportunidadesView}}
+        </div>
+        <div class="col-md-3">
+            {{> AutoAmenazasView}}
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <div class="generic-template col-md-3" >
+            <legend class="page-title">Fortalezas</legend>
+            {{#if Template.subscriptionsReady}}
+                {{#each fortalezas}}
+                    {{> FodaViewDetails}}
+                {{/each}}
+            {{else}}
+                <p>Loading</p>
+            {{/if}}
+        </div>
+        <div class="generic-template col-md-3" >
+            <legend class="page-title">Debilidades</legend>
+            {{#if Template.subscriptionsReady}}
+                {{#each debilidades}}
+                    {{> FodaViewDetails}}
+                {{/each}}
+            {{else}}
+                <p>Loading</p>
+            {{/if}}
+        </div>
+        <div class="generic-template col-md-3" >
+            <legend class="page-title">Oportunidades</legend>
+            {{#if Template.subscriptionsReady}}
+                {{#each oportunidades}}
+                    {{> FodaViewDetails}}
+                {{/each}}
+            {{else}}
+                <p>Loading</p>
+            {{/if}}
+        </div>
+        <div class="generic-template col-md-3" >
+            <legend class="page-title">Amenazas</legend>
+            {{#if Template.subscriptionsReady}}
+                {{#each amenazas}}
+                    {{> FodaViewDetails}}
+                {{/each}}
+            {{else}}
+                <p>Loading</p>
+            {{/if}}
+        </div>
+    </div>
+</template>

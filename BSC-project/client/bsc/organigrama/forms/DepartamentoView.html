@@ -1,0 +1,28 @@
+<template name="DepartamentoView">
+
+        <div class="auto-organigrama-container">
+            <legend>Departamentos/Cargos de la Organización</legend>
+
+            <label for="txtDepartmentoName">Nombre: </label>
+            <input type="text" class="form-control" id="txtDepartmentoName"  aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                   >
+
+            <label for="txtDepartmentoDescripcion">Descripción: </label>
+            <input type="text" class="form-control" id="txtDepartmentoDescripcion"  aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                  >
+
+            <label for="slcDepartamento">Nivel dentro del organigrama:</label>
+            <select class="col-md-12 slcDepartamento select2" name="slcDepartamento"   id="slcDepartamento"
+                   >
+                <option value="" class="text-center">Seleccionar...</option>
+                {{#each organigrama}}
+                    <option id="{{_id}}" value="{{_id}}-{{name}}" class="text-center">{{name}}</option>
+                {{/each}}
+
+            </select>
+
+            <button type="submit" class="btn btn-primary submit-button btn-submit-departamento-view">Submit</button>
+        </div>
+
+
+</template>

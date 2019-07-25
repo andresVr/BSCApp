@@ -11,3 +11,12 @@ FlowRouter.route('/organigrama',{
         BlazeLayout.render('MainLayout',{main:'Organigrama'});
     }
 });
+
+
+FlowRouter.route('/foda',{
+    name:'foda',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'FodaView'});
+    }
+});
+

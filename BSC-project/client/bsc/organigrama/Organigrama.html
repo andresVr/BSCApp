@@ -1,9 +1,14 @@
 <template name="Organigrama">
     <h1 class="page-title">Organigrama Funcional</h1>
-    {{> NewAutoOrganigrama}}
 
+        <div class="col-md-6">
+            {{> NewAutoOrganigrama}}
+        </div>
+        <div class="col-md-6">
+            {{> DepartamentoView}}
+        </div>
 
-    <section class="generic-template">
+    <section class="generic-template" hidden>
         {{#if Template.subscriptionsReady}}
             {{#each organigrama}}
                 {{> OrganigramaView}}

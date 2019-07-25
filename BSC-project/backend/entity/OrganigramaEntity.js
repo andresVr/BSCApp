@@ -14,36 +14,23 @@ Organigrama.allow({
     }
 )
 
-NivelTactico = new SimpleSchema({
-   name:{
-       type: String,
-       label: "Nombre coordinación"
-   },
-    desc:{
-        type: String,
-        label: "Descripción"
-
-    }
-
-
-});
 
 
 
-
-OrganigramaSchema = new SimpleSchema({
+OrganigramaEntity = new SimpleSchema({
     name: {
         type: String,
-        label:"Nombre gerencia departamental"
+        label:"Nombre categoría jerarquica"
     },
     desc:{
        type: String,
        label: "Descripción"
 
     },
-    taticalLevel:{
-      type: [NivelTactico],
-      label: "Nivel táctico"
+    personInChargue:{
+        type: String,
+        label: "Persona a cargo"
+
     },
     createUser: {
       type: "String",
@@ -69,4 +56,4 @@ OrganigramaSchema = new SimpleSchema({
 
 });
 
-Organigrama.attachSchema( OrganigramaSchema );
+Organigrama.attachSchema( OrganigramaEntity );
