@@ -21,3 +21,11 @@ Meteor.publish('oportunidades', function () {
 Meteor.publish('amenazas', function () {
     return Amenazas.find()
 })
+
+Meteor.publish('producto', function () {
+    return Producto.find()
+})
+
+Meteor.publish('bcg', function () {
+    return Bcg.find()
+})

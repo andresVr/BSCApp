@@ -1,6 +1,7 @@
 
 import {DepartamentoVo} from "../vo/DepartamentoVo";
 
+
 Meteor.methods({
         insertarDepartamento: function (DepartamentoVo){
 

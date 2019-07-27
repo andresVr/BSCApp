@@ -2,40 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7d0800a-2ea0-4c71-8e87-3b91c043d326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/dao/DepartamentoDao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/AmenazasEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/DebilidadesEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/DepartamentoEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/FortalezasEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/OportunidadesEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/vo/DepartamentoVo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/FodaModelView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/FodaView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/forms/AutoAmenazasView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/forms/AutoDebilidadesViews.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/forms/AutoFortalezasView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidades.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/foda/subscribe/subscribe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaViewModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/dao/BcgDao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/entity/BcgEntity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/entity/ProductoEntity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/vo/BcgVo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/BcgView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/BcgViewModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/form/AutoProductoView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/form/BcgFormView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/form/BcgFormViewModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bsc/bcg/subscribe/subscribe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Organigrama.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/entity/OrganigramaEntity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/OrganigramaNivelInferior.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bsc/organigrama/AutoOrganigrama.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bsc/organigrama/subscribe/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/organigrama/subscribe/subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/dao/DepartamentoDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/dao/DepartamentoDao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/foda/FodaModelView.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/foda/FodaViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidades.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidadesView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/publish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/syles.styl" beforeDir="false" afterPath="$PROJECT_DIR$/syles.styl" afterDir="false" />
     </list>
@@ -49,93 +34,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/syles.styl">
+        <entry file="file://$PROJECT_DIR$/client/bsc/bcg/BcgViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="417" column="1" selection-start-line="417" selection-start-column="1" selection-end-line="417" selection-end-column="20" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaView.html">
+        <entry file="file://$PROJECT_DIR$/backend/entity/BcgEntity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaModelView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/Organigrama.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/OrganigramaView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="17" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/Organigrama.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="314">
+              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html">
+        <entry file="file://$PROJECT_DIR$/client/bsc/bcg/BcgView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/dao/DepartamentoDao.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/OrganigramaNivelInferior.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -158,10 +80,16 @@
       <find>lodas</find>
       <find>boo</find>
       <find>main-layout</find>
+      <find>MyCollection</find>
+      <find>var Handsontable</find>
+      <find>// Remove</find>
+      <find>Handsontable</find>
+      <find>pushDepartamentoVo</find>
     </findStrings>
     <replaceStrings>
       <replace>generic-template</replace>
       <replace>generic-template-sublevel</replace>
+      <replace>Bcg</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -170,18 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/layouts/MainLayout.js" />
-        <option value="$PROJECT_DIR$/client/layouts/HomeLayout.html" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/backend/suscribe/suscribe.js" />
-        <option value="$PROJECT_DIR$/backend/subscribe/subscribe.js" />
-        <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/settings.json" />
-        <option value="$PROJECT_DIR$/client/layouts/SideNav.html" />
-        <option value="$PROJECT_DIR$/client/partials/Header.html" />
-        <option value="$PROJECT_DIR$/client/layouts/MainLayouts.html" />
-        <option value="$PROJECT_DIR$/backend/models/OrganigramaNivelInferior.js" />
-        <option value="$PROJECT_DIR$/client/bsc/organigrama/OrganigramaNivelInferior.html" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/OrganigramaView.html" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.js" />
         <option value="$PROJECT_DIR$/backend/models/OrganigramaNivelTatico.js" />
@@ -194,16 +110,13 @@
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/Departamento.html" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/subscribe/subscribe.js" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigrama.html" />
-        <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaViewModel.js" />
         <option value="$PROJECT_DIR$/backend/entity/DepartamentoEntity.js" />
-        <option value="$PROJECT_DIR$/backend/dao/DepartamentoDao.js" />
         <option value="$PROJECT_DIR$/backend/vo/DepartamentoVo.js" />
         <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html" />
-        <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/Organigrama.html" />
         <option value="$PROJECT_DIR$/backend/entity/OrganigramaEntity.js" />
         <option value="$PROJECT_DIR$/backend/entity/AmenazasEntity.js" />
@@ -214,17 +127,32 @@
         <option value="$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidades.html" />
         <option value="$PROJECT_DIR$/client/bsc/foda/forms/AutoDebilidadesViews.html" />
         <option value="$PROJECT_DIR$/client/bsc/foda/forms/AutoFortalezasView.html" />
-        <option value="$PROJECT_DIR$/lib/routes.js" />
-        <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/bsc/foda/subscribe/subscribe.js" />
         <option value="$PROJECT_DIR$/client/bsc/foda/FodaModelView.js" />
         <option value="$PROJECT_DIR$/client/bsc/foda/FodaView.html" />
-        <option value="$PROJECT_DIR$/syles.styl" />
         <option value="$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/form/AutoProductoView.html" />
+        <option value="$PROJECT_DIR$/lib/routes.js" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/form/BcgForm.js" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/form/BcgForm.html" />
+        <option value="$PROJECT_DIR$/.meteor/packages" />
+        <option value="$PROJECT_DIR$/backend/dao/DepartamentoDao.js" />
+        <option value="$PROJECT_DIR$/server/publish.js" />
+        <option value="$PROJECT_DIR$/backend/vo/BcgVo.js" />
+        <option value="$PROJECT_DIR$/backend/dao/BcgDao.js" />
+        <option value="$PROJECT_DIR$/backend/entity/ProductoEntity.js" />
+        <option value="$PROJECT_DIR$/syles.styl" />
+        <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/form/BcgFormViewModel.js" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/subscribe/subscribe.js" />
+        <option value="$PROJECT_DIR$/backend/entity/BcgEntity.js" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/form/BcgFormView.html" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/BcgView.html" />
+        <option value="$PROJECT_DIR$/client/bsc/bcg/BcgViewModel.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -234,17 +162,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
-              <item name=".meteor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
@@ -266,6 +190,12 @@
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,6 +203,29 @@
               <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="bsc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="bcg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="bcg" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="bcg" type="462c0819:PsiDirectoryNode" />
+              <item name="subscribe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
@@ -287,6 +240,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="bsc" type="462c0819:PsiDirectoryNode" />
               <item name="organigrama" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="organigrama" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
@@ -308,7 +269,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,12 +278,16 @@
     <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/lib" />
+      <recent name="$PROJECT_DIR$/client/bsc/bcg" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/bsc/organigrama/forms" />
       <recent name="$PROJECT_DIR$/client/partials" />
@@ -369,12 +333,14 @@
       <workItem from="1561208995585" duration="17739000" />
       <workItem from="1563111471485" duration="4657000" />
       <workItem from="1563139230086" duration="747000" />
-      <workItem from="1563853414322" duration="20650000" />
+      <workItem from="1563853414322" duration="24979000" />
+      <workItem from="1564136704661" duration="442000" />
+      <workItem from="1564137473332" duration="10780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43793000" />
+    <option name="totallyTimeSpent" value="59344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -404,19 +370,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/layouts/MainLayout.js" />
-    <entry file="file://$PROJECT_DIR$/settings.json" />
-    <entry file="file://$PROJECT_DIR$/client/bsc/OrganigramaNivelinferior.js" />
-    <entry file="file://$PROJECT_DIR$/.meteor/platforms">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="217" column="10" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -428,27 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entity/DepartamentoEntity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/vo/DepartamentoVo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -525,23 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="31" column="111" selection-start-line="31" selection-start-column="111" selection-end-line="31" selection-end-column="111" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -549,24 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidades.html">
+    <entry file="file://$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidadesView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="117" selection-start-line="3" selection-start-column="117" selection-end-line="3" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entity/DebilidadesEntity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-end-line="51" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/foda/forms/AutoAmenazasView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
         </state>
       </provider>
     </entry>
@@ -584,20 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/subscribe/subscribe.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -609,20 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entity/AmenazasEntity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/dao/DepartamentoDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -640,6 +513,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/foda/forms/AutoAmenazasView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/AmenazasEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/versions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/handsontable.full.css" />
+    <entry file="file://$PROJECT_DIR$/client/lib/handsontable.full.js" />
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/Organigrama.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -647,45 +548,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html">
+    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaModelView.js">
+    <entry file="file://$PROJECT_DIR$/backend/dao/BcgDao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/syles.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="417" column="1" selection-start-line="417" selection-start-column="1" selection-end-line="417" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/Organigrama.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaView.html">
+    <entry file="file://$PROJECT_DIR$/syles.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="505">
+          <caret line="416" column="17" selection-start-line="416" selection-start-column="17" selection-end-line="416" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/vo/DepartamentoVo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/vo/BcgVo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/ProductoEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/DebilidadesEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/DepartamentoEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dao/DepartamentoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaViewDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/form/BcgFormViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/form/AutoProductoView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/subscribe/subscribe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/foda/FodaView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/form/BcgFormView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/BcgViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/BcgEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/bcg/BcgView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>

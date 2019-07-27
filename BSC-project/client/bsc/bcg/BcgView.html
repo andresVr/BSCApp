@@ -1,0 +1,36 @@
+<template name="BcgView">
+    <h1 class="page-title">Matríz BCG</h1>
+    <div class="col-md-5">
+       {{>AutoProductoView}}
+    </div>
+    <div class="col-md-7">
+        {{> BcgFormView}}
+    </div>
+
+    <div class="col-md-12">
+        <div class="auto-organigrama-container">
+            <table class="table table-bordered table-sm">
+                <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Participación relativa de mercado</th>
+                    <th>Ingresos (USD)</th>
+                    <th>Crecimiento del mercado (%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each bcg}}
+                    <tr>
+                        <td>{{product}}</td>
+                        <td>{{participation}}</td>
+                        <td>{{earnings}}</td>
+                        <td>{{marketGrowth}}</td>
+                    </tr>
+                {{/each}}
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>

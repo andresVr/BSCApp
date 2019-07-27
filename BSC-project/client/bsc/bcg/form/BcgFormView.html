@@ -1,0 +1,43 @@
+<template name="BcgFormView">
+
+       <!-- <div id="example1" class="content-table-bcg"></div>-->
+        <div class="auto-organigrama-container col-md-12">
+            <legend>Protafolio productos o servicios</legend>
+
+            <div class="col-md-12">
+                <label for="slcProducto">Producto:</label>
+                <select class="col-md-12 slcProducto select2" name="slcProducto"   id="slcProducto"
+                >
+                    <option value="" class="text-center">Seleccionar...</option>
+                    {{#each product}}
+                        <option id="{{_id}}" value="{{_id}}-{{name}}" class="text-center">{{name}}</option>
+                    {{/each}}
+
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtParticipacioMercado">Participación relativa de mercado: </label>
+                <input type="number" class="form-control" id="txtParticipacioMercado"  aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="col-md-6">
+                <label for="txtIngresos">Ingresos (USD): </label>
+                <input type="number" class="form-control" id="txtIngresos"  aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="col-md-6">
+                    <label for="txtCrecimientoMercado">Crecimiento del mercado (%): </label>
+                    <input type="number" class="form-control" id="txtCrecimientoMercado"  aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="col-md-6" style=" visibility: hidden;">
+                <label for="txtHidden">Participación relativa de mercado: </label>
+                <input type="number" class="form-control" id="txtHidden"  aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary  submit-button-bcg  btn-submit-bcg-view">Submit</button>
+            </div>
+        </div>
+
+</template>

@@ -25,7 +25,7 @@ Template.DepartamentoView.events({
         if(!checkEmptyFormFields(event,template)) {
             pushDepartamentoVo(template.find('#txtDepartmentoName').value,
                 template.find('#txtDepartmentoDescripcion').value,
-                template.find('#txtDepartmentoDescripcion').value);
+                template.find('#slcDepartamento').value);
             Meteor.call('insertarDepartamento', DepartamentoVo);
             clearForm(event, template);
         }else{
