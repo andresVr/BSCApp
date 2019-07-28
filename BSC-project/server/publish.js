@@ -37,3 +37,11 @@ Meteor.publish('fo', function () {
 Meteor.publish('do', function () {
     return Do.find()
 })
+
+Meteor.publish('fa', function () {
+    return Fa.find()
+})
+
+Meteor.publish('da', function () {
+    return Da.find()
+})

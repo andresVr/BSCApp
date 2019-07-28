@@ -1,17 +1,17 @@
-<template name="DoView">
+<template name="DaView">
     <div class="col-md-12">
-        <h1 class="page-title">Matríz DO</h1>
+        <h1 class="page-title">Matríz DA</h1>
         <div class="auto-organigrama-container col-md-12">
-            <form id="DoForm">
+            <form id="DaForm">
 
-                {{#each do}}
+                {{#each da}}
 
                     <div class="col-md-4">
-                        Fortaleza: {{fortitude}}
+                        Fortaleza: {{weaknesses}}
                         <table class="table table-bordered table-sm">
                             <thead class="thead-dark">
                             <tr>
-                                <th class="col-md-11">Oportunidades</th>
+                                <th class="col-md-11">Amenaza</th>
                                 <th class="col-md-1">Calificación</th>
 
                             </tr>
@@ -19,9 +19,9 @@
                             <tbody>
 
                             <tr>
-                                <td>{{opportunity}}</td>
+                                <td>{{menace}}</td>
                                 <td>
-                                    <input type="number"   min="1" max="9" class="form-control" id="txt_{{weaknesses_id}}_{{opportunity_id}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
+                                    <input type="number"   min="1" max="9" class="form-control" id="txt_{{weaknesses_id}}_{{menace_id}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
                                 </td>
 
                             </tr>

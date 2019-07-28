@@ -43,3 +43,17 @@ FlowRouter.route('/do',{
     }
 });
 
+FlowRouter.route('/fa',{
+    name:'fa',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'FaView'});
+    }
+});
+
+
+FlowRouter.route('/da',{
+    name:'da',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'DaView'});
+    }
+});
