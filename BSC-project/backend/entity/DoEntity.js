@@ -25,11 +25,22 @@ DoEntity = new SimpleSchema({
         optional: true
 
     },
+    weaknesses_id:{
+        type: String,
+        label: "Debilidades",
+        optional: true
+
+    },
     opportunity:{
-        type: Number,
+        type: String,
         label: "Oportunidad",
-        optional: true,
-        decimal:true
+
+
+    },
+    opportunity_id:{
+        type: String,
+        label: "Oportunidad",
+
 
     },
     qualification:{

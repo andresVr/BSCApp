@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7d0800a-2ea0-4c71-8e87-3b91c043d326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/dao/FoDao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/DoEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/entity/FoEntity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/fodo/do/DoView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/fodo/fo/FoView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/fodo/fo/FoViewModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/dao/DoDao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bsc/bcg/BcgView.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/bcg/BcgView.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/partials/SideNav.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/partials/SideNav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/publish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/entity/DoEntity.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/entity/DoEntity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/fodo/do/DoView.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/fodo/do/DoView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,38 +25,44 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/bsc/fodo/fo/FoViewModel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="398">
-                  <caret line="85" selection-start-line="85" selection-end-line="85" />
+                <state relative-caret-position="-112">
+                  <caret line="51" selection-start-line="51" selection-end-line="51" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoView.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/DepartamentoViewModel.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="32" column="43" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="32" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/bsc/fodo/fo/FoView.html">
               <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret selection-end-line="36" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoView.html">
+              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+                  <caret line="23" column="138" selection-start-line="23" selection-start-column="138" selection-end-line="23" selection-end-column="138" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="426">
+                  <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -71,22 +70,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/dao/FoDao.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
+                <state relative-caret-position="45">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/entity/FortalezasEntity.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/backend/dao/DoDao.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
                 </state>
               </provider>
             </entry>
@@ -101,19 +95,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/dao/BcgDao.js">
+            <entry file="file://$PROJECT_DIR$/backend/entity/FoEntity.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+                <state relative-caret-position="401">
+                  <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/entity/FoEntity.js">
+            <entry file="file://$PROJECT_DIR$/backend/entity/DoEntity.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="401">
-                  <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+                <state relative-caret-position="150">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
@@ -123,10 +117,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backend/entity/FoEntity.js">
+            <entry file="file://$PROJECT_DIR$/backend/entity/DoEntity.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="37" column="18" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="18" />
+                <state relative-caret-position="355">
+                  <caret line="39" column="18" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -156,6 +150,7 @@
       <find>// Remove</find>
       <find>Handsontable</find>
       <find>pushDepartamentoVo</find>
+      <find>insertarDo</find>
     </findStrings>
     <replaceStrings>
       <replace>generic-template</replace>
@@ -169,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/bsc/organigrama/subscribe/subscribe.js" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigrama.html" />
         <option value="$PROJECT_DIR$/client/main.scss" />
         <option value="$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaViewModel.js" />
@@ -208,18 +202,19 @@
         <option value="$PROJECT_DIR$/client/bsc/bcg/form/BcgFormView.html" />
         <option value="$PROJECT_DIR$/client/partials/SideNav.html" />
         <option value="$PROJECT_DIR$/client/bsc/bcg/BcgView.html" />
-        <option value="$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js" />
         <option value="$PROJECT_DIR$/server/publish.js" />
-        <option value="$PROJECT_DIR$/backend/entity/DoEntity.js" />
         <option value="$PROJECT_DIR$/lib/routes.js" />
-        <option value="$PROJECT_DIR$/client/bsc/fodo/do/DoView.html" />
         <option value="$PROJECT_DIR$/backend/entity/FoEntity.js" />
         <option value="$PROJECT_DIR$/backend/vo/FoVo.js" />
         <option value="$PROJECT_DIR$/client/bsc/bcg/BcgViewModel.js" />
-        <option value="$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js" />
-        <option value="$PROJECT_DIR$/backend/dao/FoDao.js" />
-        <option value="$PROJECT_DIR$/client/bsc/fodo/fo/FoViewModel.js" />
         <option value="$PROJECT_DIR$/client/bsc/fodo/fo/FoView.html" />
+        <option value="$PROJECT_DIR$/backend/dao/FoDao.js" />
+        <option value="$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js" />
+        <option value="$PROJECT_DIR$/client/bsc/fodo/fo/FoViewModel.js" />
+        <option value="$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js" />
+        <option value="$PROJECT_DIR$/backend/entity/DoEntity.js" />
+        <option value="$PROJECT_DIR$/client/bsc/fodo/do/DoView.html" />
+        <option value="$PROJECT_DIR$/backend/dao/DoDao.js" />
       </list>
     </option>
   </component>
@@ -304,14 +299,6 @@
               <item name="bsc" type="462c0819:PsiDirectoryNode" />
               <item name="fodo" type="462c0819:PsiDirectoryNode" />
               <item name="do" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BSC-project" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="fodo" type="462c0819:PsiDirectoryNode" />
-              <item name="fo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BSC-project" type="b2602c69:ProjectViewProjectNode" />
@@ -423,12 +410,12 @@
       <workItem from="1563139230086" duration="747000" />
       <workItem from="1563853414322" duration="24979000" />
       <workItem from="1564136704661" duration="442000" />
-      <workItem from="1564137473332" duration="32928000" />
+      <workItem from="1564137473332" duration="35474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81492000" />
+    <option name="totallyTimeSpent" value="84038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -458,13 +445,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/bsc/organigrama/forms/AutoOrganigramaView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/foda/forms/AutoOportunidadesView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -661,24 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entity/DoEntity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -717,9 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/publish.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -734,13 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -761,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/entity/FoEntity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/dao/DepartamentoDao.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -775,24 +724,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/dao/FoDao.js">
+    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/fo/FoView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
+          <caret selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/FoEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/bsc/fodo/fo/FoViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="-112">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/fo/FoView.html">
+    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/subscribe/subscribe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dao/FoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/entity/DoEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/bsc/fodo/do/DoView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <caret line="23" column="138" selection-start-line="23" selection-start-column="138" selection-end-line="23" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dao/DoDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
         </state>
       </provider>
     </entry>

@@ -16,6 +16,7 @@ Template.DoView.onCreated(function () {
     self.autorun(function () {
         self.subscribe('debilidades');
         self.subscribe('oportunidades');
+        self.subscribe('do');
 
     })
 
