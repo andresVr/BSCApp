@@ -27,3 +27,19 @@ FlowRouter.route('/bcg',{
     }
 });
 
+FlowRouter.route('/fo',{
+    name:'fo',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'FoView'});
+    }
+});
+
+
+
+FlowRouter.route('/do',{
+    name:'do',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'DoView'});
+    }
+});
+

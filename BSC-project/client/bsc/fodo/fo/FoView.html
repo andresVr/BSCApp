@@ -1,0 +1,37 @@
+<template name="FoView">
+    <div class="col-md-12">
+        <h1 class="page-title">Matríz FO</h1>
+        <div class="auto-organigrama-container col-md-12">
+            <form id="FoForm">
+
+            {{#each fo}}
+
+            <div class="col-md-4">
+                Fortaleza: {{fortitude}}
+                <table class="table table-bordered table-sm">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th class="col-md-11">Oportunidades</th>
+                        <th class="col-md-1">Calificación</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>{{opportunity}}</td>
+                            <td>
+                                <input type="number"   min="1" max="9" class="form-control" id="txt_{{id_fortitude}}_{{id_opportunity}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
+                            </td>
+
+                        </tr>
+
+
+                </tbody>
+            </table>
+            </div>
+            {{/each}}
+            </form>
+        </div>
+    </div>
+</template>

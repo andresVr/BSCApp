@@ -29,3 +29,11 @@ Meteor.publish('producto', function () {
 Meteor.publish('bcg', function () {
     return Bcg.find()
 })
+
+Meteor.publish('fo', function () {
+    return Fo.find()
+})
+
+Meteor.publish('do', function () {
+    return Do.find()
+})

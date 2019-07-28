@@ -1,0 +1,35 @@
+<template name="DoView">
+    <div class="col-md-12">
+        <h1 class="page-title">Matríz DO</h1>
+        <div class="auto-organigrama-container col-md-12">
+
+            {{#each debilidades}}
+
+                <div class="col-md-4">
+                    Debilidad: {{desc}}
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="col-md-11">Oportunidades</th>
+                            <th class="col-md-1">Calificación</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each oportunidades}}
+                            <tr>
+                                <td>{{desc}}</td>
+                                <td>
+                                    <input type="number" class="form-control" id="txt{{_id}}"  aria-label="Small" aria-describedby="inputGroup-sizing-sm"/>
+                                </td>
+
+                            </tr>
+                        {{/each}}
+
+                        </tbody>
+                    </table>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>
