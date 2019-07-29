@@ -1,4 +1,4 @@
-import "../subscribe/subscribe.js"
+import "../../subscribe/subscribe.js"
 import { DepartamentoVo } from "../../../../backend/vo/DepartamentoVo";
 import { pushDepartamentoVo} from "../../../../backend/vo/DepartamentoVo";
 

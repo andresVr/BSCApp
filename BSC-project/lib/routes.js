@@ -57,3 +57,12 @@ FlowRouter.route('/da',{
         BlazeLayout.render('MainLayout',{main:'DaView'});
     }
 });
+
+
+
+FlowRouter.route('/meb',{
+    name:'meb',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'MebView'});
+    }
+});

@@ -1,5 +1,5 @@
 import {BcgVo, pushBcgVo} from "../../../../backend/vo/BcgVo";
-import "../subscribe/subscribe.js"
+import "../../subscribe/subscribe.js"
 import {DepartamentoVo, pushDepartamentoVo} from "../../../../backend/vo/DepartamentoVo";
 
 Template.BcgFormView.helpers({

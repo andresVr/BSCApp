@@ -1,4 +1,4 @@
-import "../subscribe/subscribe.js"
+import "../../subscribe/subscribe.js"
 
 Template.DoView.helpers({
     oportunidades: ()=>{

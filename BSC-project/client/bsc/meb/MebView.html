@@ -1,0 +1,55 @@
+<template name="MebView">
+    <div class="col-md-12">
+        <h1 class="page-title">Matríz de Estratégia Básica</h1>
+        <div class="auto-organigrama-container col-md-12">
+            <form id="mebForm">
+
+                {{#each meb}}
+
+                    <div class="col-md-12">
+                        {{cross_value}}
+                        <table class="table table-bordered table-sm">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th class="col-md-4">Estratégia</th>
+                                <th class="col-md-4">Perspectivas</th>
+                                <th class="col-md-4">Nivel</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>
+                                    <input type="text" class="form-control" id="txt_{{cross_id}}_strategy-{{_id}}"  aria-label="Small" value="{{strategy}}" aria-describedby="inputGroup-sizing-sm"/>
+
+                                </td>
+                                <td>
+                                    <input type="text"  class="form-control" id="txt_{{cross_id}}_perspective-{{_id}}"  aria-label="Small" value="{{perspective}}" aria-describedby="inputGroup-sizing-sm"/>
+                                </td>
+                                <td>
+                                    <label class="col-md-6" for="txt_{{cross_id}}_lvl-{{_id}}">{{orgLevel}}</label>
+                                    <select class="col-md-6 txt_{{cross_id}}_lvl-{{_id}} select2" name="txt_{{cross_id}}_lvl-{{_id}}"   id="txt_{{cross_id}}_lvl-{{_id}}"
+                                    >
+                                        <option value="" class="text-center">Seleccionar...</option>
+                                        {{#each organigrama}}
+                                            <option id="{{_id}}" value="{{name}}" class="text-center">{{name}}</option>
+                                        {{/each}}
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                {{/each}}
+            </form>
+        </div>
+    </div>
+
+
+</template>

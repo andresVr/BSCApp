@@ -45,3 +45,7 @@ Meteor.publish('fa', function () {
 Meteor.publish('da', function () {
     return Da.find()
 })
+
+Meteor.publish('meb', function () {
+    return Meb.find()
+})

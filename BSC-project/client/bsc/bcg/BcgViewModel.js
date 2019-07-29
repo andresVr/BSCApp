@@ -1,7 +1,7 @@
 
 
 
-import "./subscribe/subscribe.js"
+import "../subscribe/subscribe.js"
 
 Template.BcgView.helpers({
     bcg:()=>{

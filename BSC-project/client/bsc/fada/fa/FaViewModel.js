@@ -1,4 +1,4 @@
-import "../subscribe/subscribe.js"
+import "../../subscribe/subscribe.js"
 
 
 Template.FaView.helpers({
@@ -21,7 +21,7 @@ Template.FaView.onRendered(function() {
 
         Meteor.setTimeout(function(){
             const matrix=insertFaMatrix();
-            console.log(matrix);
+
             if(!_.isEmpty(matrix)){
                 _.each(matrix,function (m) {
                     var noRepeat = m;
