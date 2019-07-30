@@ -38,7 +38,7 @@ Template.DepartamentoView.events({
 function clearForm(event,template){
     template.find('#txtDepartmentoDescripcion').value='';
     template.find('#txtDepartmentoName').value='';
-    template.find('#slcDepartamento').textContent='';
+    //template.find('#slcDepartamento').textContent='';
 }
 
 function checkEmptyFormFields(event,template) {

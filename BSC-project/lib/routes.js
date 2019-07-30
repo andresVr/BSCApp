@@ -66,3 +66,12 @@ FlowRouter.route('/meb',{
         BlazeLayout.render('MainLayout',{main:'MebView'});
     }
 });
+
+
+
+FlowRouter.route('/mebd',{
+    name:'mebd',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'MebDepView'});
+    }
+});

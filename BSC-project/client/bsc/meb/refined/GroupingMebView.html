@@ -1,0 +1,50 @@
+<template name="GroupingMeb">
+    <div class="forms-container col-md-12">
+        <form action="groupingMebForm">
+            <div class="col-md-11"></div>
+            <div class="col-md-1">
+                <input type="button" class="btn btn-danger text-center btn-close-grouping" value="x">
+            </div>
+            <div class="col-md-12">
+                <h3 class="text-center">Agrupar Objetivos/Estrategias</h3>
+                <label  for="slcPerspectivaGrouping">Perspectiva: </label>
+                <select class="col-md-12 slcPerspectivaGrouping select2" name="slcPerspectivaGrouping"   id="slcPerspectivaGrouping"
+                >
+                    <option value="" class="text-center">Seleccionar...</option>
+                    <option id="opFinanciera" value="Financiera" class="text-center">Financiera</option>
+                    <option id="opEnfoqueCliente" value="Enfoque Cliente" class="text-center">Enfoque Cliente</option>
+                    <option id="opProcesoInternos" value="Proceso Internos" class="text-center">Proceso Internos</option>
+                    <option id="opAprendizajeCrecimiento" value="Aprendizaje Y Crecimiento" class="text-center">Aprendizaje Y Crecimiento</option>
+
+
+                </select>
+                <br>
+                <div>
+                    <label for="slcMebDepurada">Meb Estrategias:</label>
+                    <select class="col-md-12 slcMebDepurada select2 " name="slcMebDepurada"   id="slcMebDepurada"
+                    >
+                        <option value="" class="text-center">Seleccionar...</option>
+                        {{#each meb}}
+                            <option id="{{_id}}" value="{{_id}}_{{strategy}}" class="text-center">{{strategy}}</option>
+                        {{/each}}
+
+                    </select>
+                </div>
+                <br>
+
+                {{#if meb_grouping}}
+                    <div>
+                        <label>Estrategias Agrupadas: </label>{{meb_grouping}}
+                    </div>
+                    <br>
+                    <label for="inputStrategy">Objetivo estratégico de la agrupación</label>
+                    <input type="text" class="inputStrategy" id="inputStrategy">
+
+                    <input type="button" class="btn btn-primary btn-submit-grouping-strategy col-md-2" value="submit">
+
+
+                {{/if}}
+            </div>
+        </form>
+    </div>
+</template>

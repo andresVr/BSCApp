@@ -98,3 +98,19 @@ Template.MebView.onCreated(function () {
     })
 });
 
+Template.MebDepView.onCreated(function () {
+    var self = this;
+    self.autorun(function () {
+        self.subscribe('meb')
+        self.subscribe('organigrama')
+    })
+});
+
+Template.GroupingMeb.onCreated(function () {
+    var self = this;
+    self.autorun(function () {
+        self.subscribe('meb')
+        self.subscribe('organigrama')
+    })
+});
+

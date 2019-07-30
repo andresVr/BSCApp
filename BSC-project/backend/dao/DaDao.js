@@ -1,3 +1,4 @@
+import {calcEquivalence} from "../vo/FodoFadaFunctions";
 Meteor.methods({
         insertarDa: function (daVo){
 
@@ -6,7 +7,8 @@ Meteor.methods({
                 weaknesses_id:daVo[1],
                 menace:daVo[2],
                 menace_id:daVo[3],
-                qualification:daVo[4]
+                qualification:daVo[4],
+                equivalence:calcEquivalence(daVo[4])
 
             });
         },
@@ -14,7 +16,8 @@ Meteor.methods({
             Da.update({weaknesses_id:daIds[0],
                 menace_id:daIds[1]},{
                     $set: {
-                        qualification:updater
+                        qualification:updater,
+                        equivalence:calcEquivalence(updater)
 
                     }
                 }

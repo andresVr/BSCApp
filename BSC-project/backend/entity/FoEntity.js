@@ -48,7 +48,12 @@ FoEntity = new SimpleSchema({
         optional: true,
         decimal:true
     },
-
+    equivalence:{
+        type: Number,
+        label: "equivalencia",
+        optional: true,
+        decimal:true
+    },
     createUser: {
         type: "String",
         label: "Create user",

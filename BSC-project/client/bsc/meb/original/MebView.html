@@ -1,10 +1,11 @@
 <template name="MebView">
     <div class="col-md-12">
         <h1 class="page-title">Matríz de Estratégia Básica</h1>
-        <div class="auto-organigrama-container col-md-12">
+        {{#each meb}}
+        <div class="forms-container col-md-12">
             <form id="mebForm">
 
-                {{#each meb}}
+
 
                     <div class="col-md-12">
                         {{cross_value}}
@@ -25,8 +26,18 @@
 
                                 </td>
                                 <td>
-                                    <input type="text"  class="form-control" id="txt_{{cross_id}}_perspective-{{_id}}"  aria-label="Small" value="{{perspective}}" aria-describedby="inputGroup-sizing-sm"/>
-                                </td>
+                                    <label class="col-md-6" for="txt_{{cross_id}}_perspective-{{_id}}">{{perspective}}</label>
+                                    <select class="col-md-6 txt_{{cross_id}}_perspective-{{_id}} select2" name="txt_{{cross_id}}_perspective-{{_id}}"   id="txt_{{cross_id}}_perspective-{{_id}}"
+                                    >
+                                        <option value="" class="text-center">Seleccionar...</option>
+                                        <option id="opFinanciera" value="Financiera" class="text-center">Financiera</option>
+                                        <option id="opEnfoqueCliente" value="Enfoque Cliente" class="text-center">Enfoque Cliente</option>
+                                        <option id="opProcesoInternos" value="Proceso Internos" class="text-center">Proceso Internos</option>
+                                        <option id="opAprendizajeCrecimiento" value="Aprendizaje Y Crecimiento" class="text-center">Aprendizaje Y Crecimiento</option>
+
+
+                                    </select>
+                                 </td>
                                 <td>
                                     <label class="col-md-6" for="txt_{{cross_id}}_lvl-{{_id}}">{{orgLevel}}</label>
                                     <select class="col-md-6 txt_{{cross_id}}_lvl-{{_id}} select2" name="txt_{{cross_id}}_lvl-{{_id}}"   id="txt_{{cross_id}}_lvl-{{_id}}"
@@ -46,9 +57,10 @@
                             </tbody>
                         </table>
                     </div>
-                {{/each}}
+
             </form>
         </div>
+        {{/each}}
     </div>
 
 

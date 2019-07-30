@@ -22,18 +22,21 @@ MebSchema = new SimpleSchema({
     cross_id:{
         type: String,
         label: "id cruce",
+        optional:true
 
 
     },
     cross_name:{
         type: String,
         label: "matriz origen",
+        optional:true
 
 
     },
     cross_value:{
         type: String,
         label: "valor cruce",
+        optional:true
 
 
     },
@@ -54,7 +57,22 @@ MebSchema = new SimpleSchema({
             label: "nivel organizacional",
             optional:true
         }
-    ,
+    ,isUnified:{
+        type: Boolean,
+        label: "es unificada",
+        optional:true,
+        defaultValue:false,
+    },
+    unifiedList:{
+        type: String,
+        label: "lista unificacion",
+        optional:true
+    },
+    reponsibleProcess:{
+        type: String,
+        label: "proceso responsable",
+        optional:true
+    },
 
     createUser: {
         type: "String",

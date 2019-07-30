@@ -1,3 +1,4 @@
+import {calcEquivalence} from "../vo/FodoFadaFunctions";
 Meteor.methods({
     insertarFa: function (FaVo){
 
@@ -6,7 +7,8 @@ Meteor.methods({
             id_fortitude:FaVo[1],
             menace:FaVo[2],
             id_menace:FaVo[3],
-            qualification:FaVo[4]
+            qualification:FaVo[4],
+            equivalence:calcEquivalence(FaVo[4])
 
         });
     },
@@ -14,7 +16,8 @@ Meteor.methods({
     Fa.update({id_fortitude:faIds[0],
     id_menace:faIds[1]},{
         $set: {
-            qualification:updater
+            qualification:updater,
+            equivalence:calcEquivalence(updater)
 
         }
     }

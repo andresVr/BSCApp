@@ -1,10 +1,20 @@
 Meteor.methods({
-        insertarMeb: function (MebVo){
+        insertarMeb: function (mebVo){
 
             Meb.insert({
-                cross_id:MebVo.cross_id,
-                cross_name:MebVo.cross_name,
-                cross_value:MebVo.cross_value,
+                cross_id:mebVo.cross_id,
+                cross_name:mebVo.cross_name,
+                cross_value:mebVo.cross_value,
+
+
+            });
+        },
+        insertarMebDep: function (mebVo){
+
+            Meb.insert({
+                strategy:mebVo.strategy,
+                perspective:mebVo.perspective,
+                unifiedList:mebVo.unifiedList,
 
 
             });
@@ -43,6 +53,33 @@ Meteor.methods({
                     }
                 )
             }
+            },
+            removeMeb:function (id) {
+                Meb.remove({_id:id});
+            },
+            updateResposibleMeb:function (id,updater){
+                    Meb.update({
+                            _id: id,
+
+                        }, {
+                            $set: {
+                                reponsibleProcess: updater
+                            }
+                        }
+                    )
+                },
+            updateIsUnified:function (id) {
+            console.log(id);
+                Meb.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            isUnified: true
+                        }
+                    }
+                )
+
             }
 
 

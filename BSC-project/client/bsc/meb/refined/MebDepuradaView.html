@@ -1,0 +1,64 @@
+<template name="MebDepView">
+    <div class="col-md-12">
+        <h1 class="page-title">Matríz de Estratégia Depurada</h1>
+        <input type="button" class="btn btn-primary  btn-submit-grouping-strategy col-md-2" value="Agrupar Estrategias">
+
+        {{#if grouping_strategy_form $eq 'open'}}
+            {{> GroupingMeb}}
+        {{/if}}
+        {{#each meb}}
+            <div class="forms-container col-md-12">
+                <form id="mebFormD">
+
+                    <div class="col-md-12">
+                        {{cross_value}}
+                        <table class="table table-bordered table-sm">
+                            <thead class="thead-dark">
+                            <tr>
+
+                                <th class="col-md-4">Perspectivas</th>
+                                <th class="col-md-4">Objetivo Estratégico</th>
+                                <th class="col-md-4">Responsable</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>
+                                    {{perspective}}
+
+                                </td>
+                                <td>
+                                    {{strategy}}
+                                </td>
+                                <td>
+                                    <label class="col-md-6" for="txt_{{cross_id}}_responsibleProcess-{{_id}}">{{reponsibleProcess}}</label>
+                                    <select class="col-md-6 txt_{{cross_id}}_responsibleProcess-{{_id}} select2" name="txt_{{cross_id}}_responsibleProcess-{{_id}}"   id="txt_{{cross_id}}_responsibleProcess-{{_id}}"
+                                    >
+                                        <option value="" class="text-center">Seleccionar...</option>
+                                        <option id="opGerencial" value="Gerencial" class="text-center">Gerencial</option>
+                                        <option id="opEstrategico" value="Estrategico" class="text-center">Estrategico</option>
+                                        <option id="opComercial" value="Comercial" class="text-center">Comercial</option>
+                                        <option id="opProduccionOperativa" value="Producción Operativa" class="text-center">Producción Operativa</option>
+                                        <option id="opAdministrativo" value="Administrativo" class="text-center">Administrativo</option>
+                                        <option id="opFinanciero" value="Financiero" class="text-center">Financiero</option>
+                                        <option id="opTalentoHumano" value="Talento Humano" class="text-center">Talento Humano</option>
+                                        <option id="opControlIntegral" value="Control Integral" class="text-center">Control Integral</option>
+                                    </select>
+                                </td>
+
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+        {{/each}}
+    </div>
+
+
+</template>

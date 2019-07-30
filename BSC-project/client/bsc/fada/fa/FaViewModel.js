@@ -80,7 +80,7 @@ Template.FaView.events({
         const target = event.target;
         const id=target.id;
         const object_value=target.value;
-        if(!(object_value>1.4 && object_value<=9)){
+        if(!(object_value>1.4 && object_value<=10)){
             sAlert.error('<div class="message-style">Error! <br> la calificacion debe estar entre 1.5 y 9</div>', {effect: 'genie', html: true,
                 position: 'bottom-right'});
         }

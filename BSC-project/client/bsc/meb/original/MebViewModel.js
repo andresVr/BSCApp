@@ -1,4 +1,4 @@
-import "../subscribe/subscribe.js"
+import "../../subscribe/subscribe.js"
 
 
 Template.MebView.helpers({
@@ -15,7 +15,7 @@ Template.MebView.helpers({
         return Da.find({});
     },
     meb:()=>{
-        return Meb.find({});
+        return Meb.find({unifiedList:null});
     },
     organigrama:()=>{
         return Organigrama.find({});
@@ -30,7 +30,7 @@ Template.MebView.onRendered(function() {
 
         Meteor.setTimeout(function(){
             const matrix=insertMebMatrix();
-            //console.log(matrix);
+
             if(!_.isEmpty(matrix)){
                 _.each(matrix,function (m) {
                     var noRepeat = m;
@@ -58,6 +58,19 @@ function noRepeatElements(elemento) {
 
     return _.isEmpty(meb);
 }
+
+/*function findRemove(matrix) {
+
+    var meb =  Meb.find({}).fetch();
+
+    var findElement=_.find(meb,{cross_id:matrix.cross_id});
+
+    if(_.isEmpty(findElement)){
+        Meteor.call()
+    }
+
+
+}*/
 
 
 function insertMebMatrix(){
