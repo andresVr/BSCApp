@@ -1,21 +1,56 @@
 <template name="Organigrama">
     <h1 class="page-title">Organigrama Funcional</h1>
-
+    <div class="col-md-12">
         <div class="col-md-6">
             {{> NewAutoOrganigrama}}
         </div>
         <div class="col-md-6">
             {{> DepartamentoView}}
         </div>
+    </div>
+    <div class="col-md-12">
+    <section class="generic-template" >
+        <article class="generic-template">
+            <h3>Nivel Táctico</h3>
 
-    <section class="generic-template" hidden>
-        {{#if Template.subscriptionsReady}}
-            {{#each organigrama}}
+            {{#if Template.subscriptionsReady}}
+            {{#each departamentoLvl2}}
                 {{> OrganigramaView}}
             {{/each}}
         {{else}}
              <p>Loading</p>
          {{/if}}
+        </article>
     </section>
+    </div>
+    <div class="col-md-12">
+        <section class="generic-template" >
+            <article class="generic-template">
+                <h3>Nivel Jefatura</h3>
 
+                {{#if Template.subscriptionsReady}}
+                    {{#each departamentoLvl3}}
+                        {{> OrganigramaView}}
+                    {{/each}}
+                {{else}}
+                    <p>Loading</p>
+                {{/if}}
+            </article>
+        </section>
+    </div>
+    <div class="col-md-12">
+        <section class="generic-template" >
+            <article class="generic-template">
+                <h3>Nivel Operativo</h3>
+
+                {{#if Template.subscriptionsReady}}
+                    {{#each departamentoLvl4}}
+                        {{> OrganigramaView}}
+                    {{/each}}
+                {{else}}
+                    <p>Loading</p>
+                {{/if}}
+            </article>
+        </section>
+    </div>
 </template>
