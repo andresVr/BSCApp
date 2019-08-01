@@ -7,6 +7,18 @@
             </div>
             <div class="col-md-12">
                 <h3 class="text-center">Agrupar Objetivos/Estrategias</h3>
+
+                <label  for="slcLvlOrganigrama">Nivel organizacional</label>
+                <select class="col-md-12 slcLvlOrganigrama select2" name="slcLvlOrganigrama"   id="slcLvlOrganigrama"
+                >
+                    <option value="" class="text-center">Seleccionar...</option>
+                    {{#each organigrama}}
+                        <option id="{{_id}}" value="{{name}}" class="text-center">{{name}}</option>
+                    {{/each}}
+
+                </select>
+
+
                 <label  for="slcPerspectivaGrouping">Perspectiva: </label>
                 <select class="col-md-12 slcPerspectivaGrouping select2" name="slcPerspectivaGrouping"   id="slcPerspectivaGrouping"
                 >

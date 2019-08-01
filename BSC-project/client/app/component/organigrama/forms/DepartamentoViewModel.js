@@ -1,6 +1,6 @@
 import "../../subscribe/subscribe.js"
-import { DepartamentoVo } from "../../../../backend/vo/DepartamentoVo";
-import { pushDepartamentoVo} from "../../../../backend/vo/DepartamentoVo";
+import {DepartamentoVo} from "../../../../../backend/vo/DepartamentoVo";
+import {pushDepartamentoVo} from "../../../../../backend/vo/DepartamentoVo";
 
 Template.DepartamentoView.helpers({
     organigrama: ()=>{

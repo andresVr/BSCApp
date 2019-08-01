@@ -1,0 +1,117 @@
+<template name="DirObjEstView">
+
+
+        {{#each bsc_lvl_1}}
+            <div class="forms-container col-md-12">
+                <form id="dirobjForm">
+                    <h4>Dirección-ObjetivosEstrategicos</h4>
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="col-md-4">Perspectivas</th>
+                            <th class="col-md-4">Estratégia de valor</th>
+                            <th class="col-md-4">Objetivos estrategicos</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>
+                                {{meb_perspective}}
+
+                            </td>
+                            <td>
+                                {{meb_strategy}}
+                            </td>
+                            <td>
+                                <input type="text"  class="form-control" value="{{strategic_objective}}" id="txt_{{_id}}_obj_est">
+
+                            </td>
+
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+                </form>
+                <form id="measureForm">
+                    <h4>Medidas</h4>
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="col-md-3">Kpi's</th>
+                            <th class="col-md-3">Definición Operacional</th>
+                            <th class="col-md-2">Frecuencia de actualización</th>
+                            <th class="col-md-2">Frecuencia captura de datos</th>
+                            <th class="col-md-2">Niveles</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>
+                                <input type="text"  class="form-control" value="{{kpi}}" id="txt_{{_id}}_kpi">
+
+
+                            </td>
+                            <td >
+                                <input type="text"  class="form-control" value="{{defOp}}"  id="txt_{{_id}}_defOperacional">
+
+                            </td>
+                            <td>
+                                <label class="text-center"   for="txt_{{_id}}_updateFrecuency">{{updateFrecuency}}</label>
+                                <select class="col-md-12 txt_{{_id}}_updateFrecuency select2" name="txt_{{_id}}_updateFrecuency"   id="txt_{{_id}}_updateFrecuency"
+                                >
+                                    <option value="" class="text-center">Seleccionar...</option>
+                                    <option id="opAnual" value="Anual" class="text-center">Anual</option>
+                                    <option id="opSemestral" value="Semestral" class="text-center">Semestral</option>
+                                    <option id="opCuatrimestral" value="Cuatrimestral" class="text-center">Cuatrimestral</option>
+                                    <option id="opTrimestral" value="Trimestral" class="text-center">Trimestral</option>
+                                    <option id="opBimensual" value="Bimensual" class="text-center">Bimensual</option>
+                                    <option id="opMensual" value="Mensual" class="text-center">Mensual</option>
+                                    <option id="opQuincenal" value="Quincenal" class="text-center">Quincenal</option>
+                                    <option id="opSemanal" value="Semanal" class="text-center">Semanal</option>
+                                    <option id="opDiario" value="Diario" class="text-center">Diario</option>
+                                    <option id="opHora" value="Hora" class="text-center">Hora</option>
+                                    <option id="opMinuto" value="Minuto" class="text-center">Minuto</option>
+
+                                </select>
+                            </td>
+                            <td>
+                                <label class="text-center" for="txt_{{_id}}_captureFrecuency">{{captureFrecuency}}</label>
+                                <select class="col-md-12 txt_{{_id}}_captureFrecuency select2" name="txt_{{_id}}_captureFrecuency"   id="txt_{{_id}}_captureFrecuency"
+                                >
+
+                                    <option value="" class="text-center">Seleccionar...</option>
+                                    <option id="opInformes" value="Informes" class="text-center">Informes</option>
+                                    <option id="opOficios" value="Oficios" class="text-center">Oficios</option>
+                                    <option id="opMemos" value="Memos" class="text-center">Memos</option>
+                                    <option id="opEstadísticas" value="Estadísticas" class="text-center">Estadísticas</option>
+                                    <option id="opSoftware" value="Software" class="text-center">Software</option>
+
+
+                                </select>
+                            </td>
+                            <td>
+
+                                <input type="text"  class="form-control" value="{{lvlUf}}"  id="txt_{{_id}}_lvlUf">
+
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+        {{/each}}
+
+
+
+
+</template>

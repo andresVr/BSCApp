@@ -114,3 +114,30 @@ Template.GroupingMeb.onCreated(function () {
     })
 });
 
+Template.StrategyMapView.onCreated(function () {
+    var self = this;
+    self.autorun(function () {
+        self.subscribe('meb')
+
+    })
+});
+
+Template.BscLvl1View.onCreated(function () {
+    var self = this;
+    self.autorun(function () {
+        self.subscribe('meb')
+        self.subscribe('bsc_lvl_1')
+
+    })
+});
+
+Template.DirObjEstView.onCreated(function () {
+    var self = this;
+    self.autorun(function () {
+        self.subscribe('meb')
+        self.subscribe('bsc_lvl_1')
+
+    })
+});
+
+

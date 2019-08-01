@@ -49,3 +49,8 @@ Meteor.publish('da', function () {
 Meteor.publish('meb', function () {
     return Meb.find()
 })
+
+Meteor.publish('bsc_lvl_1', function () {
+    return Bsclvl1.find()
+})
+

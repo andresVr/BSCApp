@@ -1,0 +1,54 @@
+<template name="StrategyMapView">
+    <h1 class="page-title">Mapa Estratégico</h1>
+
+
+
+        <div class="forms-container">
+            <h5 class="page-title"><strong>Perspectiva financiera</strong></h5>
+
+            {{#each finance_perspective}}
+                <div class="forms-container-child text-center">
+                    {{strategy}}
+                </div>
+            {{/each}}
+        </div>
+
+
+
+        <article class="auto-organigrama-container">
+           <h5 class="page-title"><strong>Perspectiva de clientes y mercado</strong></h5>
+
+            {{#each client_perspective}}
+                <div class="forms-container-child text-center">
+                    {{strategy}}
+                </div>
+            {{/each}}
+
+        </article>
+
+
+
+        <div class="forms-container">
+            <h5 class="page-title"><strong>Perspectiva de procesos</strong></h5>
+
+            {{#each process_perspective}}
+                <div class="forms-container-child text-center">
+                    {{strategy}}
+                </div>
+            {{/each}}
+
+        </div>
+
+
+        <div class="forms-container">
+
+            <h5 class="page-title"><strong>Perspectiva de aprendizaje y crecimiento</strong></h5>
+            {{#each learning_perspective}}
+                <div class="forms-container-child text-center">
+                    {{strategy}}
+                </div>
+            {{/each}}
+
+        </div>
+
+</template>

@@ -2,7 +2,7 @@
 Template.GroupingMeb.helpers({
 
     meb:()=>{
-        return Meb.find({isUnified:{$not:true}});
+        return Meb.find({isUnified:{$not:true},unifiedList:null});
     },
 
     meb_grouping:()=>{
@@ -17,7 +17,10 @@ Template.GroupingMeb.helpers({
             return accumulator;
         }
 
-    }
+    },
+    organigrama: ()=>{
+        return Organigrama.find({});
+    },
 
 
 
@@ -31,6 +34,12 @@ Template.GroupingMeb.rendered = function () {
     });
     $("#slcPerspectivaGrouping").select2({
         placeholder: "Selecciona/busca la Perspectiva",
+        language: "es"
+
+    });
+
+    $("#slcLvlOrganigrama").select2({
+        placeholder: "Selecciona/busca el nivel organizacional",
         language: "es"
 
     });
@@ -72,11 +81,11 @@ Template.GroupingMeb.events({
 
         var strategy = template.find("#inputStrategy").value;
         var perspective = template.find("#slcPerspectivaGrouping").value;
-
+        var lvl =template.find("#slcLvlOrganigrama").value;
         var updaterStrategys = Session.get("meb-grouping");
-       console.log('s',strategy,'p',perspective,'u',updaterStrategys);
 
-        if(_.isEmpty(strategy) ||_.isEmpty(perspective) ||_.isEmpty(updaterStrategys)){
+
+        if(_.isEmpty(strategy) ||_.isEmpty(perspective) ||_.isEmpty(updaterStrategys)||_.isEmpty(lvl)){
             sAlert.error('<div class="message-style">Error! <br> Todos los campos son requeridos para continuar</div>', {effect: 'genie', html: true,
                 position: 'bottom-right'});
         }else{
@@ -89,7 +98,7 @@ Template.GroupingMeb.events({
                 accumulator = accumulator + pre.label + ', '
             })
 
-            var mebVo={'strategy': strategy,
+            var mebVo={'lvl':lvl,'strategy': strategy,
                 'perspective':perspective,
                 'unifiedList':accumulator};
             Meteor.call('insertarMebDep',mebVo);

@@ -12,6 +12,7 @@ Meteor.methods({
         insertarMebDep: function (mebVo){
 
             Meb.insert({
+                orgLevel:mebVo.lvl,
                 strategy:mebVo.strategy,
                 perspective:mebVo.perspective,
                 unifiedList:mebVo.unifiedList,

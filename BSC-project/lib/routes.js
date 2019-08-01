@@ -75,3 +75,17 @@ FlowRouter.route('/mebd',{
         BlazeLayout.render('MainLayout',{main:'MebDepView'});
     }
 });
+
+FlowRouter.route('/smap',{
+    name:'smap',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'StrategyMapView'});
+    }
+});
+
+FlowRouter.route('/bsc_lvl_1',{
+    name:'bsc_lvl_1',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'BscLvl1View'});
+    }
+});
