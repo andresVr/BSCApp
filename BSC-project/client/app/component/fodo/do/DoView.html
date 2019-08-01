@@ -1,13 +1,13 @@
 <template name="DoView">
     <div class="col-md-12">
-        <h1 class="page-title">Matríz DO</h1>
+
         <div class="auto-organigrama-container col-md-12">
             <form id="DoForm">
 
                 {{#each do}}
 
                     <div class="col-md-4">
-                        Fortaleza: {{fortitude}}
+                        Debilidad: <span class="font-size-normalized">{{weaknesses}}</span>
                         <table class="table table-bordered table-sm">
                             <thead class="thead-dark">
                             <tr>
@@ -19,7 +19,7 @@
                             <tbody>
 
                             <tr>
-                                <td>{{opportunity}}</td>
+                                <td><span class="font-size-normalized">{{opportunity}}</span></td>
                                 <td>
                                     <input type="number"   min="1" max="10" class="form-control" id="txt_{{weaknesses_id}}_{{opportunity_id}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
                                 </td>

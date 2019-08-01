@@ -98,6 +98,26 @@ Bsclvl1Schema = new SimpleSchema({
         label: "responsable",
         optional:true,
     },
+    project:{
+        type: String,
+        label: "project",
+        optional:true,
+    },
+    responsable_project:{
+        type: String,
+        label: "responsable_project",
+        optional:true,
+    },
+    startDate:{
+        type: Date,
+        label: "startDate",
+        optional:true,
+    },
+    endDate:{
+        type: Date,
+        label: "endDate",
+        optional:true,
+    },
     createUser: {
         type: "String",
         label: "Create user",

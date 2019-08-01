@@ -89,3 +89,10 @@ FlowRouter.route('/bsc_lvl_1',{
         BlazeLayout.render('MainLayout',{main:'BscLvl1View'});
     }
 });
+
+FlowRouter.route('/fodofada',{
+    name:'fodofada',
+    action(){
+        BlazeLayout.render('MainLayout',{main:'FodoFadaView'});
+    }
+});

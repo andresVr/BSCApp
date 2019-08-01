@@ -60,11 +60,16 @@ Template.BcgFormView.rendered = function () {
 Template.BcgFormView.events({
     'click .btn-submit-bcg-view ': function (event,template){
         if(!checkEmptyFormFields(event,template)) {
+
             pushBcgVo(template.find('#slcProducto').value,
                 template.find('#txtParticipacioMercado').value,
                 template.find('#txtIngresos').value,
-                template.find('#txtCrecimientoMercado').value);
-            Meteor.call('insertarBcg', BcgVo);
+                template.find('#txtCrecimientoMercado').value,
+                bcgIdentifier(template.find('#txtParticipacioMercado').value,
+                    template.find('#txtCrecimientoMercado').value),
+                bcgVerticalArrow(template.find('#txtCrecimientoMercado').value),
+                bcgHorizontalArrow(template.find('#txtParticipacioMercado').value));
+                 Meteor.call('insertarBcg', BcgVo);
             clearForm(event, template);
         }else{
             sAlert.error('<div class="message-style">Error! <br> Todos los campos son requeridos para continuar</div>', {effect: 'genie', html: true,
@@ -73,11 +78,49 @@ Template.BcgFormView.events({
     }
 });
 
+function bcgIdentifier(participacion, crecimiento) {
+    var resultado = '';
+    if(participacion>1 && crecimiento>50){
+        resultado = 'Estrella';
+    }else if(participacion>1 && crecimiento <50){
+        resultado = 'Vacas';
+    }else if(participacion<1 && crecimiento < 50){
+        resultado = 'Perro'
+    }else{
+        resultado = 'Interrogación'
+    }
+
+    return resultado;
+}
+
+function bcgVerticalArrow (crecimiento){
+    var resultado = '';
+    if(crecimiento>50){
+        resultado = 'fa fa-arrow-up cell-color-green';
+    }
+    if(crecimiento<50){
+        resultado = 'fa fa-arrow-down cell-color-red';
+    }
+    return resultado;
+}
+
+
+function bcgHorizontalArrow(participacion) {
+    var resultado = '';
+    if(participacion>1){
+        resultado = 'fa fa-arrow-right cell-color-green';
+    }
+    if(participacion<1){
+        resultado = 'fa fa-arrow-left cell-color-red';
+    }
+    return resultado;
+}
+
 function clearForm(event,template){
     template.find('#txtParticipacioMercado').value='';
     template.find('#txtIngresos').value='';
     template.find('#txtCrecimientoMercado').value='';
-    template.find('#slcProducto').textContent='';
+
 }
 
 function checkEmptyFormFields(event,template) {

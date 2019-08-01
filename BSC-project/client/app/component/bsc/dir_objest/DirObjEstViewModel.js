@@ -50,7 +50,10 @@ Template.DirObjEstView.onRendered(function() {
 
 
     });
+
 });
+
+
 
 function noRepeatElements(elemento) {
 
@@ -81,7 +84,6 @@ function insertBscLvl1Matrix() {
 
 
 Template.DirObjEstView.events({
-
 
 
     'change form#dirobjForm': function(event,template){
@@ -169,8 +171,8 @@ Template.DirObjEstView.events({
     },
     'change form#goalsForm':function (event,template) {
         const target = event.target;
-        const id=target.id;
-        var object_valueGoal=target.value;
+        const id = target.id;
+        var object_valueGoal = target.value;
 
         console.log(object_valueGoal);
 
@@ -180,28 +182,67 @@ Template.DirObjEstView.events({
         var isResponsable = id.indexOf("_responsable") !== -1;
 
 
-        if(isgoalType) {
-            if(target.checked){
+        if (isgoalType) {
+            if (target.checked) {
                 object_valueGoal = "USD";
-            }else{
+            } else {
                 object_valueGoal = "% ";
             }
 
-            var updater={'label':'anualGoalType','value':object_valueGoal}
+            var updater = {'label': 'anualGoalType', 'value': object_valueGoal}
 
             Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        } else if (isanualGoal) {
+
+            var updater = {'label': 'anualGoal', 'value': object_valueGoal}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        } else if (isResponsable) {
+            var updater = {'label': 'responsable', 'value': object_valueGoal}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+
         }
-        else if(isanualGoal) {
+    },
+        'change form#resourcesForm': function(event,template) {
 
-            var updater={'label':'anualGoal','value':object_valueGoal}
-            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
-        }else if(isResponsable){
-            var updater={'label':'responsable','value':object_valueGoal}
-            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+            const target = event.target;
+            const id = target.id;
+            const object_value = target.value;
+            console.log(object_value);
+
+
+            var isProject = id.indexOf("_project") !== -1;
+            var isResponsable_project = id.indexOf("_responsableProject") !== -1;
+            var isStartDate = id.indexOf("_sdate") !== -1;
+            var isEndDate = id.indexOf("_edate") !== -1;
+            var startDate = null;
+
+            if (isProject) {
+                var updater={'label':'project','value':object_value}
+                Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+            }
+            if (isResponsable_project) {
+                var updater={'label':'responsable_project','value':object_value}
+                Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+            }
+            if (isStartDate) {
+                startDate = new Date(object_value);
+                var updater={'label':'startDate','value':object_value}
+                Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+            }
+            if (isEndDate) {
+                var endDate = new Date(object_value);
+                if(endDate>startDate) {
+                    var updater = {'label': 'endDate', 'value': object_value}
+                    Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+                }else{
+                    sAlert.error('<div class="message-style">Error! <br> La fecha fin debe ser mayor a la fecha inicio</div>', {effect: 'genie', html: true,
+                        position: 'bottom-right'});
+                }
+            }
 
         }
 
-    }
+
 
 });
 

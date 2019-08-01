@@ -170,6 +170,55 @@
                         </tbody>
                     </table>
                 </form>
+                <form id="resourcesForm">
+                    <h4>Medios</h4>
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="col-md-3">Iniciativa Estratégica</th>
+                            <th class="col-md-3">Lider de implementación</th>
+                            <th class="col-md-2">Fecha Inicio</th>
+                            <th class="col-md-2">Fecha Fin</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="color-text-white">aaa</div>
+                                <input type="text"  class="form-control" value="{{project}}" id="txt_{{_id}}_project">
+
+
+                            </td>
+                            <td >
+                                <div class="col-md-12 color-text-white">aaa</div>
+                                <label class="col-md-6" for="txt_{{_id}}_responsableProject">{{responsable_project}}</label>
+                                <select class="col-md-6 txt_{{_id}}_responsableProject select2" name="txt_{{_id}}_responsableProject"   id="txt_{{_id}}_responsableProject"
+                                >
+                                    <option value="" class="text-center">Seleccionar...</option>
+                                    {{#each department}}
+                                        <option id="{{_id}}" value="{{name}}" class="text-center">{{name}}</option>
+                                    {{/each}}
+
+                                </select>
+
+                            </td>
+                            <td>
+                                <label for="dt_{{_id}}_sdate" class="col-md-12">{{formatDate startDate}}</label>
+                                <input type="date" id="dt_{{_id}}_sdate" value={{startDate}} name="bday">
+                            </td>
+                            <td>
+                                <label for="dt_{{_id}}_edate" class="col-md-12">{{formatDate endDate}} </label>
+                                <input type="date" id="dt_{{_id}}_edate" value={{endDate}} name="bday">
+                            </td>
+
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </form>
             </div>
 
 

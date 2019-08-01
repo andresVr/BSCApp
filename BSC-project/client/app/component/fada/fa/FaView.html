@@ -1,17 +1,17 @@
 <template name="FaView">
     <div class="col-md-12">
-        <h1 class="page-title">Matríz FA</h1>
+
         <div class="auto-organigrama-container col-md-12">
             <form id="FaForm">
 
                 {{#each fa}}
 
                     <div class="col-md-4">
-                        Fortaleza: {{fortitude}}
+                        Fortaleza: <span class="font-size-normalized">{{fortitude}}</span>
                         <table class="table table-bordered table-sm">
                             <thead class="thead-dark">
                             <tr>
-                                <th class="col-md-11">Oportunidades</th>
+                                <th class="col-md-11">Amenaza</th>
                                 <th class="col-md-1">Calificación</th>
 
                             </tr>
@@ -19,7 +19,7 @@
                             <tbody>
 
                             <tr>
-                                <td>{{menace}}</td>
+                                <td><span class="font-size-normalized">{{menace}}</span></td>
                                 <td>
                                     <input type="number"   min="1" max="10" class="form-control" id="txt_{{id_fortitude}}_{{id_menace}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
                                 </td>

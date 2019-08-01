@@ -45,7 +45,21 @@ BcgEntity = new SimpleSchema({
         optional: true,
         decimal:true
     },
-
+    bcgIdentifier:{
+        type: String,
+        label: "bcgIdentifier",
+        optional: true
+    },
+    bcgIdentifierVerticalArrow:{
+        type: String,
+        label: "bcgIdentifierVerticalArrow",
+        optional: true
+    },
+    bcgIdentifierHorizontalArrow:{
+        type: String,
+        label: "bcgIdentifierHorizontalArrow",
+        optional: true
+    },
     createUser: {
         type: "String",
         label: "Create user",

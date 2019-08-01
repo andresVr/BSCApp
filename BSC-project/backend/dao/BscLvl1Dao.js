@@ -125,6 +125,54 @@ Meteor.methods({
                 )
             }
 
+            if(updater.label==='project'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            project: updater.value
+                        }
+                    }
+                )
+            }
+
+            if(updater.label==='responsable_project'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            responsable_project: updater.value
+                        }
+                    }
+                )
+            }
+
+            if(updater.label==='startDate'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            startDate: new Date(updater.value)
+                        }
+                    }
+                )
+            }
+
+            if(updater.label==='endDate'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            endDate: new Date(updater.value)
+                        }
+                    }
+                )
+            }
+
 
         },
 

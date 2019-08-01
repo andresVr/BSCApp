@@ -9,8 +9,10 @@ Meteor.methods({
                 product:BcgVo.product,
                 participation:BcgVo.participation,
                 earnings:BcgVo.earnings,
-                marketGrowth:BcgVo.marketGrowth
-
+                marketGrowth:BcgVo.marketGrowth,
+                bcgIdentifier:BcgVo.bcgIdentifier,
+                bcgIdentifierHorizontalArrow:BcgVo.bcgIdentifierHorizontalArrow,
+                bcgIdentifierVerticalArrow:BcgVo.bcgIdentifierVerticalArrow
             });
         }
     }

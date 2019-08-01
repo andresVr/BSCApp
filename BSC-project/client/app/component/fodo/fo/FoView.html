@@ -1,13 +1,13 @@
 <template name="FoView">
     <div class="col-md-12">
-        <h1 class="page-title">Matríz FO</h1>
+
         <div class="auto-organigrama-container col-md-12">
             <form id="FoForm">
 
             {{#each fo}}
 
             <div class="col-md-4">
-                Fortaleza: {{fortitude}}
+                Fortaleza: <span class="font-size-normalized">{{fortitude}}</span>
                 <table class="table table-bordered table-sm">
                     <thead class="thead-dark">
                     <tr>
@@ -19,7 +19,7 @@
                     <tbody>
 
                         <tr>
-                            <td>{{opportunity}}</td>
+                            <td><span class="font-size-normalized">{{opportunity}}</span></td>
                             <td>
                                 <input type="number"   min="1" max="10" class="form-control" id="txt_{{id_fortitude}}_{{id_opportunity}}"  aria-label="Small" value="{{qualification}}" aria-describedby="inputGroup-sizing-sm"/>
                             </td>
