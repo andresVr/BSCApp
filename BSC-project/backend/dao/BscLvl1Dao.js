@@ -24,6 +24,7 @@ Meteor.methods({
         },
 
         updateMeasuresObj:function (id,updater){
+            console.log(updater);
             if(updater.label==='kpi'){
                 Bsclvl1.update({
                         _id: id,
@@ -68,6 +69,17 @@ Meteor.methods({
                     }
                 )
             }
+            if(updater.label==='typeLvlUf'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            lvlUfType: updater.value
+                        }
+                    }
+                )
+            }
             if(updater.label==='lvlUf'){
                 Bsclvl1.update({
                         _id: id,
@@ -75,6 +87,39 @@ Meteor.methods({
                     }, {
                         $set: {
                             lvlUf: updater.value
+                        }
+                    }
+                )
+            }
+            if(updater.label==='anualGoal'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            anualGoal: updater.value
+                        }
+                    }
+                )
+            }
+            if(updater.label==='anualGoalType'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            anualGoalType: updater.value
+                        }
+                    }
+                )
+            }
+            if(updater.label==='responsable'){
+                Bsclvl1.update({
+                        _id: id,
+
+                    }, {
+                        $set: {
+                            responsable: updater.value
                         }
                     }
                 )

@@ -136,6 +136,7 @@ Template.DirObjEstView.onCreated(function () {
     self.autorun(function () {
         self.subscribe('meb')
         self.subscribe('bsc_lvl_1')
+        self.subscribe('departamento')
 
     })
 });

@@ -53,11 +53,13 @@
 
                         <tr>
                             <td>
+                                <div class="color-text-white">aaa</div>
                                 <input type="text"  class="form-control" value="{{kpi}}" id="txt_{{_id}}_kpi">
 
 
                             </td>
                             <td >
+                                <div class="color-text-white">aaa</div>
                                 <input type="text"  class="form-control" value="{{defOp}}"  id="txt_{{_id}}_defOperacional">
 
                             </td>
@@ -96,13 +98,75 @@
                                 </select>
                             </td>
                             <td>
-
-                                <input type="text"  class="form-control" value="{{lvlUf}}"  id="txt_{{_id}}_lvlUf">
+                                <!-- Rounded switch -->
+                                <label class="switch col-md-6">
+                                    <input type="checkbox" id="rd_{{_id}}_lvlType">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="col-md-1">   {{lvlUfType}}</span>
+                                <input type="number"  class="form-control" value="{{lvlUf}}"  id="txt_{{_id}}_lvlUf">
 
                             </td>
                         </tr>
 
 
+                        </tbody>
+                    </table>
+                </form>
+                <form id="goalsForm">
+                    <table class="table table-bordered table-sm">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="col-md-3">Meta anual</th>
+                            <th colspan="3" class="text-center col-md-6">Variaciones</th>
+                            <th class="col-md-3">Responsable</th>
+                        </tr>
+                        <tr>
+                            <th class="col-md-3"> </th>
+                            <th class="col-md-2 cell-color-red">Rojo</th>
+                            <th class="col-md-2 cell-color-yellow">Amarillo </th>
+                            <th class="col-md-2 cell-color-green">Verde </th>
+                            <th class="col-md-2"> </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>
+                                <!-- Rounded switch -->
+                                <label class="switch col-md-6">
+                                    <input type="checkbox" id="rd_{{_id}}_anualGoalType">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="col-md-1">{{anualGoalType}}</span>
+
+
+                                <input type="number"  class="form-control" value="{{anualGoal}}"  id="txt_{{_id}}_anualGoal">
+
+
+                            </td>
+                            <td>
+                                <i>{{minus}}</i> {{lvlUf}}
+                            </td>
+                            <td>
+                                <i>{{major_Eq}}</i> {{lvlUf}}
+                            </td>
+
+                            <td>
+                                <i>{{major_Eq}}</i> {{anualGoal}}
+                            </td>
+                            <td>
+                                <label class="col-md-6" for="txt_{{_id}}_responsable">{{responsable}}</label>
+                                <select class="col-md-6 txt_{{_id}}_responsable select2" name="txt_{{_id}}_responsable"   id="txt_{{_id}}_responsable"
+                                >
+                                    <option value="" class="text-center">Seleccionar...</option>
+                                    {{#each department}}
+                                        <option id="{{_id}}" value="{{name}}" class="text-center">{{name}}</option>
+                                    {{/each}}
+
+                                </select>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </form>

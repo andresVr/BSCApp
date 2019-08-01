@@ -11,6 +11,16 @@ Template.DirObjEstView.helpers({
         return Bsclvl1.find({
         });
     },
+    minus:()=>{
+        return "<";
+    },
+    major_Eq:()=>{
+        return ">=";
+    },
+    department:()=>{
+        return Departamento.find({})
+    }
+
 
 
 
@@ -93,14 +103,19 @@ Template.DirObjEstView.events({
     'change form#measureForm':function (event,template) {
         const target = event.target;
         const id=target.id;
-        const object_value=target.value;
+        var object_value=target.value;
+
         console.log(object_value);
+
 
         var isKpi = id.indexOf("_kpi") !== -1;
         var isDefOp = id.indexOf("_defOperacional") !== -1;
         var isUpdateFrecuency = id.indexOf("_updateFrecuency") !== -1;
         var isCaptureFrecuency = id.indexOf("_captureFrecuency") !== -1;
         var isLvlUf = id.indexOf("_lvlUf") !== -1;
+        var islvlType = id.indexOf("_lvlType") !== -1;
+        var isgoalType = id.indexOf("_anualGoalType") !== -1;
+        var isanualGoal = id.indexOf("_anualGoal") !== -1;
 
 
         if(isKpi) {
@@ -124,6 +139,68 @@ Template.DirObjEstView.events({
             var updater={'label':'lvlUf','value':object_value}
             Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
         }
+
+        if(islvlType) {
+            if(target.checked){
+                object_value = "USD";
+            }else{
+                object_value = "%";
+            }
+
+            var updater={'label':'typeLvlUf','value':object_value}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        }
+        if(isgoalType) {
+            if(target.checked){
+                object_value = "USD";
+            }else{
+                object_value = "%";
+            }
+
+            var updater={'label':'anualGoalType','value':object_value}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        }
+        if(isanualGoal) {
+
+            var updater={'label':'anualGoal','value':object_value}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        }
+
+    },
+    'change form#goalsForm':function (event,template) {
+        const target = event.target;
+        const id=target.id;
+        var object_valueGoal=target.value;
+
+        console.log(object_valueGoal);
+
+
+        var isgoalType = id.indexOf("_anualGoalType") !== -1;
+        var isanualGoal = id.indexOf("_anualGoal") !== -1;
+        var isResponsable = id.indexOf("_responsable") !== -1;
+
+
+        if(isgoalType) {
+            if(target.checked){
+                object_valueGoal = "USD";
+            }else{
+                object_valueGoal = "% ";
+            }
+
+            var updater={'label':'anualGoalType','value':object_valueGoal}
+
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        }
+        else if(isanualGoal) {
+
+            var updater={'label':'anualGoal','value':object_valueGoal}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+        }else if(isResponsable){
+            var updater={'label':'responsable','value':object_valueGoal}
+            Meteor.call('updateMeasuresObj', id.split("_")[1], updater);
+
+        }
+
     }
 
 });

@@ -67,13 +67,36 @@ Bsclvl1Schema = new SimpleSchema({
     },
     captureFrecuency:{
         type: String,
-        label: "Nivel",
+        label: "captureFrecuency",
         optional:true
     },
     lvlUf:{
+        type: Number,
+        label: "lvlUf",
+        optional:true,
+        decimal:true
+    },
+    lvlUfType:{
         type: String,
-        label: "Nivel",
+        label: "lvlUfType",
         optional:true
+    },
+    anualGoal:{
+        type: Number,
+        label: "anualGoal",
+        optional:true,
+        decimal: true
+    },
+    anualGoalType:{
+        type: String,
+        label: "anualGoalType",
+        optional:true
+
+    },
+    responsable:{
+        type: String,
+        label: "responsable",
+        optional:true,
     },
     createUser: {
         type: "String",
