@@ -17,6 +17,6 @@
     "popper": "^1.0.1",
     "select2": "^4.0.7",
     "select2-bootstrap-theme": "0.1.0-beta.10",
-    "simpl-schema": "^1.5.5"
+    "simpl-schema": "^1.10.2"
   }
 }
